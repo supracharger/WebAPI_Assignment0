@@ -1,0 +1,35 @@
+{
+    Content-Type:               application/json; charset=UTF-8 
+    Vary:                       Origin 
+    Vary:                       X-Origin 
+    Vary:                       Referer 
+    Content-Encoding:           gzip 
+    Date:                       Sun, 02 Feb 2025 22:02:59 GMT 
+    Server:                     ESF 
+    X-XSS-Protection:           0 
+    X-Frame-Options:            SAMEORIGIN 
+    X-Content-Type-Options:     nosniff 
+    Alt-Svc:                    h3=":443"; ma=2592000,h3-29=":443"; ma=2592000 
+    Transfer-Encoding:          chunked
+}
+
+{
+    Content-Type:               The file stucture type (json, csv ...) and character encoding. 
+                                In this case it is json, and UTF-8.
+    Vary:                       The response may vary from the 'Origin'.
+    Vary:                       Like "Vary: Origin," but depends on "X-Origin". 
+    Vary:                       Like "Vary: Origin," but depends on "Referer." Usually identifies
+                                the page the request was from. 
+    Content-Encoding:           The Compression formatting. In this case gzip. 
+    Date:                       Timestamp of the servers response. 
+    Server:                     The algorithm the server used for the response.
+    X-XSS-Protection:           Disables the X-XXS-Protection for browsers.
+    X-Frame-Options:            frames or iframes. "SAMEORIGIN" means the pages have to come 
+                                from the same domain.
+    X-Content-Type-Options:     Tells the server not to infer the content type. Helps prevent from
+                                MIME-sniffing attacks.
+    Alt-Svc:                    On port 443 can have alternate services for a specific amount of
+                                time (2592000).
+    Transfer-Encoding:          Instead of the data sent as a whole it is "chunked" to speed
+                                up performance.
+}
