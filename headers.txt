@@ -1,35 +1,26 @@
 {
-    Content-Type:               application/json; charset=UTF-8 
-    Vary:                       Origin 
-    Vary:                       X-Origin 
-    Vary:                       Referer 
-    Content-Encoding:           gzip 
-    Date:                       Sun, 02 Feb 2025 22:02:59 GMT 
-    Server:                     ESF 
-    X-XSS-Protection:           0 
-    X-Frame-Options:            SAMEORIGIN 
-    X-Content-Type-Options:     nosniff 
-    Alt-Svc:                    h3=":443"; ma=2592000,h3-29=":443"; ma=2592000 
-    Transfer-Encoding:          chunked
+    Postman-Token:      <Postman random UUID token identifier>
+    Host:               https://www.googleapis.com/books/v1/volumes/{{book_id}}
+    User-Agent:         PostmanRuntime/7.43.0
+    Accept:             */*
+    Accept-Encoding:    gzip, deflate, br
+    Connection:         keep-alive
 }
 
 {
-    Content-Type:               The file stucture type (json, csv ...) and character encoding. 
-                                In this case it is json, and UTF-8.
-    Vary:                       The response may vary from the 'Origin'.
-    Vary:                       Like "Vary: Origin," but depends on "X-Origin". 
-    Vary:                       Like "Vary: Origin," but depends on "Referer." Usually identifies
-                                the page the request was from. 
-    Content-Encoding:           The Compression formatting. In this case gzip. 
-    Date:                       Timestamp of the servers response. 
-    Server:                     The algorithm the server used for the response.
-    X-XSS-Protection:           Disables the X-XXS-Protection for browsers.
-    X-Frame-Options:            frames or iframes. "SAMEORIGIN" means the pages have to come 
-                                from the same domain.
-    X-Content-Type-Options:     Tells the server not to infer the content type. Helps prevent from
-                                MIME-sniffing attacks.
-    Alt-Svc:                    On port 443 can have alternate services for a specific amount of
-                                time (2592000).
-    Transfer-Encoding:          Instead of the data sent as a whole it is "chunked" to speed
-                                up performance.
+    Postman-Token:      This is a random identifier. It aids in Postman debugging and
+                        gives Postman the ability to distintly separate requests.
+
+    Host:               The domain name address to send the request to the server.
+
+    User-Agent:         Helps the server identify that the client is using Postman.
+
+    Accept:             Tells the server that Postman can understand all forms of 
+                        response types.
+
+    Accept-Encoding:    Defines what encoding(s) the client supports like Compression
+                        algorithms.
+                        
+    Connection:         Keeps the connection alive for future use so subsequent requests
+                        have a faster response.
 }
